@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily Motivation Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1 id="greeting">Good Morning!</h1>
+    <h2 id="time">00:00:00</h2>
+    <p id="date"></p>
+    <blockquote id="quote">Loading your motivation...</blockquote>
+    <button id="new-quote">Get New Quote</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #5ee7df, #b490ca);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  color: #222;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 30px 50px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+#time {
+  font-size: 2em;
+  margin: 10px 0;
+}
+
+#quote {
+  font-style: italic;
+  margin: 20px 0;
+  color: #333;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  background: #5ee7df;
+  color: #222;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #b490ca;
+  color: white;
+}
